@@ -1,0 +1,11 @@
+<h1>O primeiro valor é: {{ $p1 }}</h1>
+<h1>O Segundo valor é: {{ $p2 }}</h1>
+
+@if ($p1 < 0 || $p2 < 0) 
+    <h1>Não e Permitido Valor menor que 0</h1>
+    @elseif ($p1 == 0 || $p2 == 0)
+    <h1>Não e permitido valor igual a 0</h1>
+    @else
+    <h1>O resultado da Multiplicação é: {{ $p1 * $p2 }}</h1>
+    @endif
+   
