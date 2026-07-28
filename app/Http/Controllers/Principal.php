@@ -6,11 +6,20 @@ use Illuminate\Http\Request;
 
 class Principal extends Controller
 {
-    function principal(){
-        echo 'Página Principal';
+    public function principal()
+    {
+        return view('principal');
     }
-
-    
+    public function contato()
+    {
+        return view('contato');
+    }
+    public function sobre()
+    {
+        return view('sobre');
+    }
+    public function produtos()
+    {
+        return view('produtos');
+    }
 }
-
-
